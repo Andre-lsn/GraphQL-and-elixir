@@ -13,5 +13,4 @@ defmodule CommunityWeb.Router do
       interface: :simple,
       context: %{pubsub: CommunityWeb.Endpoint}
   end
-
 end

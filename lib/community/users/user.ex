@@ -3,14 +3,14 @@ defmodule Community.Users.User do
   import Ecto.Changeset
 
   @type t :: %__MODULE__{
-    id: integer(),
-    age: integer(),
-    cpf: binary(),
-    email: binary(),
-    name: binary(),
-    inserted_at: NaiveDateTime.t(),
-    updated_at: NaiveDateTime.t()
-  }
+          id: integer(),
+          age: integer(),
+          cpf: binary(),
+          email: binary(),
+          name: binary(),
+          inserted_at: NaiveDateTime.t(),
+          updated_at: NaiveDateTime.t()
+        }
 
   @required_fields ~w(name email age cpf)a
 

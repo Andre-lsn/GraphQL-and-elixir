@@ -36,7 +36,13 @@ defmodule Community.UsersTest do
 
     test "update_user/2 with valid data updates the user" do
       user = user_fixture()
-      update_attrs = %{age: 43, cpf: "some updated cpf", email: "some updated email", name: "some updated name"}
+
+      update_attrs = %{
+        age: 43,
+        cpf: "some updated cpf",
+        email: "some updated email",
+        name: "some updated name"
+      }
 
       assert {:ok, %User{} = user} = Users.update_user(user, update_attrs)
       assert user.age == 43

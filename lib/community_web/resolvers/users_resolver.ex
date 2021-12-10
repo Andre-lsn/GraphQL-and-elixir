@@ -11,6 +11,7 @@ defmodule CommunityWeb.UsersResolver do
     case Users.create_user(args) do
       {:ok, user} ->
         {:ok, user}
+
       _error ->
         {:error, %{message: "Not possible create user"}}
     end
